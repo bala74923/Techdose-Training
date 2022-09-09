@@ -26,3 +26,16 @@ public class SelectionSort {
         arr[j] = temp;
     }
 }
+/*
+in sorted array
+0 th index has minimum element in the array
+1 th index has minimum element in the array except first element
+
+process
+========
+find the element with min index after current ,swap with current index
+
+
+find the minimum elements in the order so we can finally achieve the
+sorted array in n-1 traversal
+ */

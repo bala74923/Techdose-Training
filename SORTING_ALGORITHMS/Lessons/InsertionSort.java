@@ -26,3 +26,16 @@ public class InsertionSort {
         list.set(j,temp);
     }
 }
+/*
+in insertion sort
+we will insert the new element into sorted order
+
+for example
+    arr = [1,2,3]
+    if we insert element 2, [1,2,3,2] again sort it takes o(nlogn) time
+    instead of that we can insert element in correct place by o(n)
+
+    first the element is inserted at last
+    then it will be swapped with its previous elements
+    until it reaches smaller element as previous element than current element
+ */

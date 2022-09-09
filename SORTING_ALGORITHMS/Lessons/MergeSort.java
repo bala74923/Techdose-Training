@@ -36,3 +36,12 @@ public class MergeSort {
         }
     }
 }
+/*
+this algorithm works on divide and conquer basis
+it will divide the array into subarrays till it reaches sub array size as 1
+size 1 arrays are always sorted
+
+divide the array into subarrays and merge the sorted subarrays
+recursively to get sorted array
+
+ */
