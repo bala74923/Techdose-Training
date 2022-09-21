@@ -1,9 +1,6 @@
 package SORTING_ALGORITHMS_2;
 
-import java.util.Arrays;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Queue;
+import java.util.*;
 
 public class BucketSort {
     public static void main(String[] args) {
@@ -20,19 +17,32 @@ public class BucketSort {
         int range = (max-min+1);
         double load_factor  = 3.0;
         int bucketSize = (int)Math.ceil(range/load_factor);
-        Queue<Integer>[] hash = new LinkedList[bucketSize];
+        List<Integer>[] hash = new ArrayList[bucketSize];
         for(int i=0;i<bucketSize;i++){
-            hash[i]= new LinkedList<>();
+            hash[i]= new ArrayList<>();
         }
         for(int val:arr){
             int index = (val-min)/(int)load_factor;
-            hash[index].add(val);
+            insert(hash[index],val);
         }
         int index=0;
         for(int i=0;i<bucketSize;i++){
-            while(!hash[i].isEmpty()){
-                arr[index++] = hash[i].poll();
+            for(int val:hash[i]){
+                arr[index++] = val;
             }
         }
+    }
+    static void insert(List<Integer> list,int element){
+        list.add(element);
+        int j = list.size()-1;
+        while(j>0 && list.get(j-1)>list.get(j)) {
+            swap(list, j, j - 1);
+            j--;
+        }
+    }
+    static void swap(List<Integer> list, int i, int j){
+        int temp = list.get(i);
+        list.set(i,list.get(j));
+        list.set(j,temp);
     }
 }
