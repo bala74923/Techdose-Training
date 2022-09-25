@@ -1,4 +1,4 @@
-package SORTING_ALGORITHMS.Assignments;
+package SORTING_ALGORITHMS_2.Assignments;
 
 import java.util.Arrays;
 
