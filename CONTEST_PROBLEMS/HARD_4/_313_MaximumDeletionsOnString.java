@@ -46,6 +46,12 @@ public class _313_MaximumDeletionsOnString {
             pow[i] = pow[i-1]*base;
             hash[i] = (hash[i-1]*base) + (s.charAt(i-1));
         }
+        /*
+        hash[] = 0
+        hash[a] = a
+        hash[ab] = ax + b
+       hash[ abc ] = (ax +b)x+ c =  ax^2 + bx +c
+         */
     }
     static long get(int i,int j){
         return hash[j]-hash[i-1]*pow[j-i+1]; // here pow is stored in array for o(1) time retrieval
