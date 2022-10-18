@@ -7,8 +7,6 @@ public class Template {
     int mod = (int)1e9+7;
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        Integer[][] arr = {{1,2},{4,5}};
-        Debugger.print(arr);
 
     }
     static void solve(){
