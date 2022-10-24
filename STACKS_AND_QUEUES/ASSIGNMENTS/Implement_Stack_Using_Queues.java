@@ -1,4 +1,4 @@
-package STACKS_AND_QUEUES;
+package STACKS_AND_QUEUES.ASSIGNMENTS;
 
 import java.util.LinkedList;
 import java.util.Queue;
