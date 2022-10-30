@@ -1,4 +1,4 @@
-package Heap.Assignments;
+package HEAP.ASSIGNMENTS;
 
 public class SlidingWindowMaximum {
 

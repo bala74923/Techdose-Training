@@ -1,4 +1,4 @@
-package Heap.Assignments;
+package HEAP.ASSIGNMENTS;
 
 import java.util.PriorityQueue;
 
